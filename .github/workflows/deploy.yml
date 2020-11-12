@@ -31,4 +31,4 @@ jobs:
       with:
         environment: production
         url_prefix: ~/static/js
-        sourcemaps: ~/static/js
+        sourcemaps: /Users/scefali/Work/github-actions-react/build/static/js
