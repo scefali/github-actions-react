@@ -29,4 +29,5 @@ jobs:
       uses: getsentry/action-release@5d9e70a28bba4c62ebca79bad210c228b0b82dbc # Change the version for testing
       with:
         environment: production
-        url_prefix: "~/static/js"
+        url_prefix: ~/static/js
+        sourcemaps: build/static/js
