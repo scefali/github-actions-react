@@ -23,14 +23,8 @@ jobs:
     - name: Build assets
       run: npm run build
 
-    - name: Configure credentials
-      run: sleep 0.1
-
-    - name: Deploy to production
-      run: sleep 1
-
     - name: Sentry Release
-      uses: getsentry/action-release@6623fec02199a9b1bcce7131b0fa90b0f2c4450d # Change the version for testing
+      uses: getsentry/action-release@v1 # Change the version for testing
       with:
         environment: production
         url_prefix: ~/static/js
