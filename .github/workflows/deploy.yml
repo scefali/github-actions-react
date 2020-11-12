@@ -27,8 +27,8 @@ jobs:
       run: sleep 1
 
     - name: Sentry Release
-      uses: getsentry/action-release@5d9e70a28bba4c62ebca79bad210c228b0b82dbc # Change the version for testing
+      uses: getsentry/action-release@3df0b228db5e5bfd5bb9e3298589467aa99d9ec8 # Change the version for testing
       with:
         environment: production
         url_prefix: ~/static/js
-        sourcemaps: ../../build
+        sourcemaps: build
