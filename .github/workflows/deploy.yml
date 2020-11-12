@@ -18,13 +18,7 @@ jobs:
     - uses: actions/checkout@v2.3.4
 
     - name: Build assets
-      run: sleep 0.5
-
-    - name: Configure credentials
-      run: sleep 0.1
-
-    - name: Deploy to production
-      run: sleep 1
+      run: npm run build
 
     - name: Sentry Release
       uses: getsentry/action-release@6623fec02199a9b1bcce7131b0fa90b0f2c4450d # Change the version for testing
