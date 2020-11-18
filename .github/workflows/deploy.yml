@@ -17,11 +17,11 @@ jobs:
     steps:
     - uses: actions/checkout@v2.3.4
 
-    # - name: Install
-    #   run: npm install
+    - name: Install
+      run: npm install
 
-    # - name: Build assets
-    #   run: npm run build
+    - name: Build assets
+      run: npm run build
 
     - name: Sentry Release
       uses: getsentry/action-release@2f3b0a702fd8674f2eb10557bea6c687eb2c7ee1 # Change the version for testing
