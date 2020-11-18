@@ -24,7 +24,7 @@ jobs:
       run: npm run build
 
     - name: Sentry Release
-      uses: getsentry/action-release@dc7c6224ae78c9732fe807cc1e34ae83c0c113e1 # Change the version for testing
+      uses: getsentry/action-release@1bf2640353457c56a0e05a823450fc67a111bf1a # Change the version for testing
       with:
         url_prefix: ~/static/js
         sourcemaps: build/static/js
