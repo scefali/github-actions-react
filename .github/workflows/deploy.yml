@@ -24,8 +24,9 @@ jobs:
       run: npm run build
 
     - name: Sentry Release
-      uses: getsentry/action-release@v1 # Change the version for testing
+      uses: getsentry/action-release@testing_version_prefix_when_version_provided # Change the version for testing
       with:
         environment: production
         url_prefix: ~/static/js
         sourcemaps: build/static/js
+        version: v1.0
