@@ -17,14 +17,14 @@ jobs:
     steps:
     - uses: actions/checkout@v2.3.4
 
-    - name: Install
-      run: npm install
+    # - name: Install
+    #   run: npm install
 
-    - name: Build assets
-      run: npm run build
+    # - name: Build assets
+    #   run: npm run build
 
     - name: Sentry Release
-      uses: getsentry/action-release@878503825eebbc020bef695d0a8f054b4c7640e5 # Change the version for testing
+      uses: getsentry/action-release@5e0f403bf24a5cfd32219ce688e0ab92523e25b7 # Change the version for testing
       with:
         url_prefix: ~/static/js
         sourcemaps: build/static/js
